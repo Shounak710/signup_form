@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel = "stylesheet" href = "signup_form.css">
+</head>
+<body>
+<form id="regForm" action="/action_page.php">
+	<div class = "container">
+		<div class = "wrapper">	
+			<div class = "arrow-steps clearfix" style="text-align:center;margin-top:40px;">
+			    <div class="step"><span>Current status</span></div>
+			    <div class="step"><span>Plan</span></div>
+			    <div class="step"><span>About you</span></div>
+			    <div class="step"><span>Method</span></div>
+			</div>
+			<div class = "tab clearfix"><br><br>
+				<fieldset>
+					<legend>I am a...</legend>
+					<input type = "radio" class = "input-hidden" name = "occupation" id = "worker">
+					<label for = "worker">
+						<img src = "https://findicons.com/files/icons/2770/ios_7_icons/128/worker.png" alt = "Worker">
+					</label>
+					<input type = "radio" class = "input-hidden" name = "occupation" id = "student">
+					<label for = "student">
+						<img src = "https://findicons.com/files/icons/2770/ios_7_icons/128/student2.png" alt = "Student">
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>Holding license as </legend>
+					<input type = "button" value = "Judo reduction teacher"><br><br>
+					<input type = "button" value = "Acupuncturist"><br><br>
+					<input type = "button" value = "Anma Massage Therapist">
+				</fieldset>
+				<legend>Work experience </legend>
+				<select>
+					<option value = 0 selected></option>
+					<option value = "1 year">1 year</option>
+					<option value = "2 years">2 years</option>
+					<option value = "3 years">3 years</option>
+				</select>
+			</div>
+			<div class="tab"><br><br>
+			    <legend>Currently you are</legend>
+			    <input type = "button" value = "Working" style = "display: inline; width: 40%;">
+				<input type = "button" value = "Not working" style = "display: inline; width: 40%;"><br><br>
+				<legend>Have you decided your retirement date?</legend>
+			    <input type = "button" value = "Yes" style = "display: inline; width: 40%;">
+				<input type = "button" value = "No" style = "display: inline; width: 40%;">
+			</div>
+			<div class="tab">Birthday:
+			    <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+			    <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+			    <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+			</div>
+			<div class="tab">Login Info:
+			    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+			    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+			</div>
+			<div style="overflow:auto;">
+			    <div style="float:right;">
+			      	<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+			      	<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+</form>
+<script src = "signup_form.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
